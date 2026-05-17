@@ -1,27 +1,129 @@
-# FIFA Statistical Analysis
+# FIFA Player Statistical Analysis
 
-## Overview
-This project performs statistical analysis on FIFA player dataset to derive insights on performance, wages, and player attributes.
+![Python](https://img.shields.io/badge/Python-3.x-blue?logo=python)
+![Pandas](https://img.shields.io/badge/Pandas-Data%20Analysis-green?logo=pandas)
+![SciPy](https://img.shields.io/badge/SciPy-Statistical%20Testing-blue?logo=scipy)
+![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-orange?logo=jupyter)
+![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
 
-## Key Analysis
-- Preferred Foot vs Overall Rating (T-test)
-- Age vs Player Potential (T-test)
-- Preferred Foot vs Position (Chi-square test)
-- International Reputation vs Wages (ANOVA)
-- Median Wage Analysis of Top 20 Players (Wilcoxon test)
+---
 
-## Tools Used
-- Python
-- Pandas
-- NumPy
-- SciPy
-- Matplotlib / Seaborn
+## Project Overview
+
+This project performs an end-to-end statistical analysis on the FIFA player
+dataset using Python. It combines Exploratory Data Analysis (EDA) with formal
+hypothesis testing to derive data-driven insights on player performance, wages,
+age impact, and preferred foot. Statistical tests including T-test, ANOVA,
+Chi-square, and Wilcoxon are applied to validate findings objectively.
+
+---
+
+## Sample Visualization
+
+<img width="329" height="266" alt="overall" src="https://github.com/user-attachments/assets/30e5df4c-3a1c-46e9-a5f0-76c0009d51e7" />
+
+---
+
+## Objectives
+
+- Analyze the impact of preferred foot on overall player rating
+- Examine the relationship between age and player potential
+- Test whether preferred foot influences player position
+- Determine how international reputation affects player wages
+- Identify wage patterns among the top 20 highest-paid players
+
+---
+
+## Tools and Technologies
+
+| Tool             | Purpose                            |
+|------------------|------------------------------------|
+| Python           | Core programming language          |
+| Pandas           | Data manipulation and analysis     |
+| NumPy            | Numerical computations             |
+| SciPy            | Statistical hypothesis testing     |
+| Matplotlib       | Data visualization                 |
+| Seaborn          | Statistical visualizations         |
+| Jupyter Notebook | Interactive development environment|
+
+---
+
+## Dataset
+
+- Source: FIFA Player Dataset (Kaggle)
+- Domain: Sports Analytics
+- Key columns used: Overall, Potential, Age, Wage, Preferred Foot,
+  International Reputation, Position, Club
+
+---
+
+## Hypothesis Tests Performed
+
+| Test             | Variables Tested                              | Result                                      |
+|------------------|-----------------------------------------------|---------------------------------------------|
+| T-test           | Preferred Foot vs Overall Rating              | Left-footed players show higher ratings     |
+| T-test           | Age vs Player Potential                       | Players above 35 show significantly lower potential |
+| Chi-square       | Preferred Foot vs Position                    | Strong relationship confirmed               |
+| ANOVA            | International Reputation vs Wages             | Higher reputation significantly raises wages|
+| Wilcoxon         | Median Wage of Top 20 Players                 | Significant wage difference confirmed       |
+
+---
+
+## Project Workflow
+
+1. Import Libraries and Load Dataset
+2. Data Understanding and Cleaning
+3. Exploratory Data Analysis
+4. Hypothesis Testing
+   - T-test: Preferred Foot vs Overall Rating
+   - T-test: Age vs Potential
+   - Chi-square: Preferred Foot vs Position
+   - ANOVA: International Reputation vs Wages
+   - Wilcoxon: Median Wage of Top 20 Players
+5. Key Insights and Conclusions
+
+---
 
 ## Key Insights
-- Left-footed players show statistically higher overall ratings
-- Players above 35 have lower potential
-- Strong relationship between position and preferred foot
-- Higher international reputation significantly increases wages
 
-## Conclusion
-Statistical testing confirms key factors affecting player performance and wages, enabling data-driven decision making.
+- Left-footed players show statistically higher overall ratings than right-footed players
+- Players above 35 years of age have significantly lower potential scores
+- There is a strong statistical relationship between preferred foot and playing position
+- International reputation is a significant predictor of player wages
+- Wage distribution among the top 20 players shows a statistically significant pattern
+
+---
+
+## How to Run
+
+1. Clone this repository:
+   git clone https://github.com/PushpalathaSidd/FIFA_Statistical_Analysis.git
+
+2. Open the notebook:
+   jupyter notebook FIFA_Statistical_Analysis.ipynb
+
+3. Run all cells from top to bottom
+
+Requirements: Python 3.x, pandas, numpy, scipy, matplotlib, seaborn, jupyter
+
+---
+
+## Files Included
+
+FIFA_Statistical_Analysis/
+FIFA_Statistical_Analysis.ipynb   — Main analysis notebook
+README.md                         — Project documentation
+
+---
+
+## Author
+
+Pushpalatha Sidd
+
+- LinkedIn: https://www.linkedin.com/in/pushpalatha-s-1a6187285/
+- GitHub: https://github.com/PushpalathaSidd
+- Tableau: https://public.tableau.com/app/profile/pushpalatha.sidd/vizzes
+
+---
+
+This project is part of my data analytics portfolio. Feedback and suggestions are welcome.
